@@ -5,6 +5,7 @@ import Testimonials from '../Testimonials/Testimonials';
 import BusinessArea from '../BusinessArea/BusinessArea';
 import useAuth from '../../../hooks/useAuth';
 import { Spinner } from 'react-bootstrap';
+import Blogs from '../Blogs/Blogs';
 
 const Home = () => {
     const {isLoading} = useAuth()
@@ -18,7 +19,8 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            <Services></Services>
+            <Blogs></Blogs>
+            {/* <Services></Services> */}
             <Testimonials></Testimonials>
             <BusinessArea></BusinessArea>
         </div>

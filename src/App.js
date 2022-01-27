@@ -12,6 +12,9 @@ import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import NotFound from './Pages/NotFound/NotFound';
 import AddServices from './Pages/AddServices/AddServices';
 import AllBookings from './Pages/AllBookings/AllBookings';
+import SingleBlog from './Pages/SingleBlog/SingleBlog';
+import AddBlog from './Pages/AddBlog/AddBlog';
+import Register from './Pages/Login/Register/Register';
 
 function App() {
   return (
@@ -25,6 +28,12 @@ function App() {
           <Route path="/home">
             <Home></Home>
           </Route>
+          <PrivateRoute path="/blogs/:id">
+            <SingleBlog></SingleBlog>
+          </PrivateRoute>
+          <PrivateRoute path="/addBlog">
+            <AddBlog></AddBlog>
+          </PrivateRoute>
           <PrivateRoute path="/booking/:id">
             <Book></Book>
           </PrivateRoute>
@@ -36,6 +45,9 @@ function App() {
           </PrivateRoute>
           <Route path="/login">
             <Login></Login>
+          </Route>
+          <Route path="/register">
+            <Register></Register>
           </Route>
           <PrivateRoute path="/addService">
             <AddServices></AddServices>

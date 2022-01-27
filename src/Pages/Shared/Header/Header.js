@@ -19,8 +19,10 @@ const Header = () => {
                         <Nav>
                             <Nav.Link as={Link} to="/home">Home</Nav.Link>
                             <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
-                            <Nav.Link as={Link} to="/allBooking">Manage All Booking</Nav.Link>
-                            <Nav.Link as={Link} to="/addService">Add Service</Nav.Link>
+                            {/* <Nav.Link as={Link} to="/allBooking">Manage All Booking</Nav.Link> */}
+                            <Nav.Link as={Link} to="/addBlog">Add Blog</Nav.Link>
+                            
+                            {/* <Nav.Link as={Link} to="/addService">Add Service</Nav.Link> */}
                             {/* <Nav.Link as={Link} to="/login">Login</Nav.Link> */}
                             {user?.email?<Stack direction="horizontal">
                                 <small className="text-info">{user.displayName?user.displayName : ' '}</small>
